@@ -49,6 +49,29 @@
   color: #292424;
   text-decoration: none;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.signin::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  background-color: rgb(17, 24, 226);
+  border-radius: 50%;
+  animation: blink 0.8s infinite alternate;
+  margin-top: 4px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .signin:hover {
@@ -66,7 +89,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 90%;
+  width: 90%; 
   max-width: 500px; 
   box-sizing: border-box;
 }
@@ -90,11 +113,28 @@
 
 .bold-text {
   margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 450 !important;
-  font-family: 'Segoe UI', Tahoma, sans-serif; 
+  font-size: 28px; /* Designer-like font size */
+  font-weight: 700 !important; /* Bold weight */
+  font-family: 'Segoe UI', Tahoma, sans-serif;
   color: #292424;
+
+  /* Gradient effect */
+  background: -webkit-linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: -moz-linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: -ms-linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: -o-linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+
+  /* Background clip with vendor prefixes */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Ensure text remains transparent (for WebKit browsers) */
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for a more designer look */
 }
+
 
 .input-box {
   padding: 12px;
@@ -103,8 +143,8 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%; 
-  max-width: 400px; 
-  text-align: center;
+  max-width: 400px;
+  text-align: center; 
   box-sizing: border-box;
 }
 
@@ -117,44 +157,50 @@
   border-radius: 4px;
   cursor: pointer;
   width: 100%; 
-  max-width: 200px; 
+  max-width: 200px;
 }
 
 .start-button:hover {
   background-color: #0056b3;
 }
 
+/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
   .github-link {
-    left: 140px;
+    left: 120px;
   }
 
   .signin {
-    right: 10px; 
+    right: 10px;
   }
 
   .logo {
-    width: 80px; 
-    left: 10px; 
+    width: 80px;
+    left: 10px;
   }
 
   .centered-container {
-    width: 95%; 
+    width: 95%;
   }
 
   .center-logo {
-    width: 120px; 
+    width: 120px;
   }
 }
 
 @media (max-width: 480px) {
+  .github-link {
+    left: 80px; 
+    font-size: 14px; 
+  }
+
   .bold-text {
     font-size: 1.5em; 
   }
 
   .input-box,
   .start-button {
-    width: 100%;
+    width: 100%; 
     max-width: none; 
   }
 
