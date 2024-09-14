@@ -9,7 +9,7 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex flex-col items-center justify-center flex-grow p-4">
-          <img src={makeinindia} alt="Logo" className="mb-4" />
+          <img src={makeinindia} alt="Logo" className="mb-4 logo-glow" />
           <h2 className="text-center text-2xl font-semibold mb-4 text-black font-sans">
             Effortless Transcription, Instant Queries, and Seamless Conversations
           </h2>
