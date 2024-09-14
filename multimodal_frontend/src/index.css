@@ -24,7 +24,7 @@
   justify-content: flex-start;
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+  box-sizing: border-box;
 }
 
 .logo {
@@ -32,7 +32,7 @@
   height: auto; 
   position: absolute;
   top: 14px !important;
-  left: 20px !important; /* Adjusted position */
+  left: 20px !important;
 }
 
 .logo:hover {
@@ -66,13 +66,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 90%; /* Responsive width */
-  max-width: 500px; /* Max width to prevent overflow */
+  width: 90%;
+  max-width: 500px; 
   box-sizing: border-box;
 }
 
 .center-logo {
-  width: 200px; /* Adjust size as needed */
+  width: 150px; 
   height: auto;
   margin-bottom: 10px;
 }
@@ -85,12 +85,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Ensure content fits within container */
+  width: 100%; 
 }
 
 .bold-text {
   margin-bottom: 20px;
-  font-size: 30px; /* Adjust font size */
+  font-size: 24px;
   font-weight: 450 !important;
   font-family: 'Segoe UI', Tahoma, sans-serif; 
   color: #292424;
@@ -102,8 +102,8 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%; /* Make it responsive */
-  max-width: 600px; /* Max width to prevent overflow */
+  width: 100%; 
+  max-width: 400px; 
   text-align: center;
   box-sizing: border-box;
 }
@@ -116,42 +116,49 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%; /* Make it responsive */
-  max-width: 300px; /* Max width to prevent overflow */
+  width: 100%; 
+  max-width: 200px; 
 }
 
 .start-button:hover {
-  background-color: #0056b3; /* Darker color on hover */
+  background-color: #0056b3;
 }
 
-/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
   .github-link {
-    left: 60px; /* Adjust for mobile devices */
+    left: 60px;
   }
 
   .signin {
-    right: 10px; /* Adjust for mobile devices */
+    right: 10px; 
   }
 
   .logo {
-    width: 80px; /* Adjust size for smaller screens */
-    left: 10px; /* Adjust position */
+    width: 80px; 
+    left: 10px; 
   }
 
   .centered-container {
-    width: 95%; /* Increase width for better fit on smaller screens */
+    width: 95%; 
+  }
+
+  .center-logo {
+    width: 120px; 
   }
 }
 
 @media (max-width: 480px) {
   .bold-text {
-    font-size: 1.5em; /* Adjust font size for very small screens */
+    font-size: 1.5em; 
   }
 
   .input-box,
   .start-button {
-    width: 100%; /* Full width on very small screens */
-    max-width: none; /* Remove maximum width */
+    width: 100%;
+    max-width: none; 
+  }
+
+  .center-logo {
+    width: 100px;
   }
 }
