@@ -126,7 +126,8 @@
 
 @media (max-width: 768px) {
   .github-link {
-    left: 60px;
+    left: 80px;
+    font-size: 14px;
   }
 
   .signin {
