@@ -164,7 +164,7 @@
   background-color: #0056b3;
 }
 
-/* Media Queries for Mobile Devices */
+
 @media (max-width: 768px) {
   .github-link {
     left: 120px;
@@ -189,10 +189,6 @@
 }
 
 @media (max-width: 480px) {
-  .github-link {
-    left: 80px; 
-    font-size: 14px; 
-  }
 
   .bold-text {
     font-size: 1.5em; 
@@ -202,9 +198,5 @@
   .start-button {
     width: 100%; 
     max-width: none; 
-  }
-
-  .center-logo {
-    width: 100px;
   }
 }
