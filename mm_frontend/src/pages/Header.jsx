@@ -1,9 +1,9 @@
-import makeinindia from '../assets/mii.png'
+import makeinindia from "../assets/mii.png";
 
 export const Header = () => {
-  return (  
+  return (
     <header className="flex justify-between items-center p-4">
-      <img src={makeinindia} className="w-24 h-auto"/>
+      <img src={makeinindia} className="w-24 h-auto" />
       <div className="flex items-center">
         <a
           href="https://github.com/BhusareHarshad/MultimodalRAG"
