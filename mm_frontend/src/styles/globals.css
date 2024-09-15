@@ -72,14 +72,4 @@
     transform: translateY(-35px);
   }
 
-@keyframes glow {
-  0% { filter: drop-shadow(0 0 5px rgba(25, 234, 98, 0.5)); }
-  50% { filter: drop-shadow(0 0 20px rgb(44, 24, 223)) drop-shadow(0 0 30px rgba(0, 0, 255, 0.75)); }
-  100% { filter: drop-shadow(0 0 5px rgba(235, 72, 18, 0.5)); }
-}
-
-.logo-glow {
-  animation: glow 3s infinite ease-in-out;
-}
-
   

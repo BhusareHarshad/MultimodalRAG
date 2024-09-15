@@ -9,11 +9,23 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex flex-col items-center justify-center flex-grow p-4">
-          <img src={makeinindia} alt="Logo" className="mb-4 logo-glow" />
-          <h2 className="text-center text-2xl font-semibold mb-4 text-black font-sans">
+          <img src={makeinindia} alt="Logo" className="mb-4" />
+          <h2
+            className="text-center text-2xl font-light mb-4 text-black"
+            style={{
+              fontFamily: 'Arial, sans-serif', // Set to Arial and sans-serif
+              letterSpacing: '0.5px',
+            }}
+          >
             Effortless Transcription, Instant Queries, and Seamless Conversations
           </h2>
-          <h2 className="text-center text-2xl font-semibold mb-4 text-blue-700 font-sans">
+          <h2
+            className="text-center text-2xl font-light mb-4 text-blue-700"
+            style={{
+              fontFamily: 'Arial, sans-serif', // Set to Arial and sans-serif
+              letterSpacing: '0.5px',
+            }}
+          >
             All in One Click!
           </h2>
           <input
@@ -30,8 +42,9 @@ function App() {
         <Footer />
       </div>
     </>
-  );  
+  );
 }
+
 
 
 export default App;

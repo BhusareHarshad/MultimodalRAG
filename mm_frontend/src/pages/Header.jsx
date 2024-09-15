@@ -2,7 +2,7 @@ import makeinindia from '../assets/mii.png'
 
 export const Header = () => {
   return (  
-    <header className="flex justify-between items-center p-4 bg-gray-100 border-b border-gray-300">
+    <header className="flex justify-between items-center p-4">
       <img src={makeinindia} className="w-24 h-auto"/>
       <div className="flex items-center">
         <a
